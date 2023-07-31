@@ -8,17 +8,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700&family=Open+Sans:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
     <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
   </head>
   <body>
     <header class="header">
       <div class="container container-nav">
         <a href="#">
-          <img src="images/logo.svg" alt="The brilworks logo" />
+          <img class="logo" src="images/logo.svg" alt="The brilworks logo" />
         </a>
 
         <nav class="main-nav">
@@ -31,5 +32,68 @@
         </nav>
       </div>
     </header>
+
+    <main>
+      <section class="section-hero">
+        <div class="container container-hero grid">
+          <div class="section-hero-message grid-col-7">
+            <span class="section-label">WELCOME TO BRILWORX</span>
+            <h1 class="section-heading">WE BUILD JAW-DROPPING WEBSITES</h1>
+          </div>
+          <div class="container-hero-img grid-col-5">
+            <img
+              class="section-hero-img"
+              src="images/header-img.png"
+              alt="A funny picture of our CIO wearing three pair of glasses on top of each other"
+            />
+          </div>
+        </div>
+        <div class="container">
+          <p class="container-subheading section-subheading">
+            Creative website design for start-ups, sole traders & settled
+            businesses.
+          </p>
+        </div>
+        <div class="container grid">
+          <div class="card grid-col-4">
+            <img
+              class="card-icon"
+              src="images/header-icon-1.svg"
+              alt="heart icon"
+            />
+            <h3 class="card-heading">collaborate</h3>
+            <p class="card-text">
+              Work collaboratively with supportive designers and create your
+              perfect website.
+            </p>
+            <a href="#" class="btn btn-card">check our work</a>
+          </div>
+          <div class="card grid-col-4">
+            <img
+              class="card-icon"
+              src="images/header-icon-2.svg"
+              alt="heart icon"
+            />
+            <h3 class="card-heading">blog</h3>
+            <p class="card-text">
+              Explore our blogs to educate and accentuate your online presence.
+            </p>
+            <a href="#" class="btn btn-card">read our posts</a>
+          </div>
+          <div class="card grid-col-4">
+            <img
+              class="card-icon"
+              src="images/header-icon-3.svg"
+              alt="heart icon"
+            />
+            <h3 class="card-heading">contact us</h3>
+            <p class="card-text">
+              Build customizable packages and get your free quote now.
+            </p>
+            <a href="#" class="btn btn-card">ask for a qoute</a>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

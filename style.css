@@ -50,10 +50,10 @@ html {
 }
 
 body {
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 1;
-  font-weight: 400;
-  color: #555;
+  color: #2d2c4c;
+  position: relative;
 }
 
 /**************************/
@@ -62,6 +62,50 @@ body {
 
 .container {
   width: 112rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.grid-col-4 {
+  grid-column: span 4;
+}
+
+.grid-col-5 {
+  grid-column: span 5;
+}
+.grid-col-7 {
+  grid-column: span 7;
+}
+
+.section-heading {
+  font-size: 9.5rem;
+  font-weight: 500;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  letter-spacing: -5px;
+  line-height: 1.1;
+}
+
+.section-label {
+  display: inline-block;
+  background-color: #2d2c4c;
+  color: #fff;
+  max-width: fit-content;
+  font-size: 1.6rem;
+  padding: 0.4rem 0.8rem;
+  letter-spacing: 2px;
+  margin-bottom: 3.2rem;
+}
+
+.section-subheading {
+  font-size: 2.6rem;
+  width: 60%;
+  line-height: 1.5;
+  margin-bottom: 8rem;
 }
 
 /**************************/
@@ -71,16 +115,25 @@ body {
 .header {
   background-color: #fcd750;
   padding: 3.2rem 0;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .container-nav {
-  height: 6rem;
-  margin: 0 auto;
-  padding: 0 3.2rem;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.logo {
+  height: 2.4rem;
+  transition: all 0.3s;
+}
+
+.logo-big {
+  height: 6rem;
 }
 
 .main-nav-list {
@@ -92,10 +145,73 @@ body {
 
 .main-nav-link:link,
 .main-nav-link:visited {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   text-decoration: none;
-  font-family: "Hanken Grotesk", sans-serif;
   color: #222;
   font-weight: 500;
   padding-top: 0.5rem;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  transition: all 0.3s;
+  color: #20a5e6;
+}
+/**************************/
+/* SECTION HERO */
+/**************************/
+
+.section-hero {
+  background-color: #fcd750;
+  padding: 19.2rem 0 12.8rem;
+}
+
+.section-hero-img {
+  width: 100%;
+}
+
+.card {
+  height: 23rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card-icon {
+  height: 6rem;
+  margin-bottom: 3.2rem;
+}
+.card-heading {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #20a5e6;
+  font-weight: 400;
+  margin-bottom: 0.8rem;
+}
+.card-text {
+  font-size: 1.6rem;
+  width: 25rem;
+}
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font-size: 1rem;
+  background-color: #20a5e6;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.5rem 0.75rem;
+  border-radius: 2.5px;
+}
+.btn-card:link,
+.btn-card:visited {
+  margin-top: auto;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  padding: 1rem 1.5rem;
+}
+.btn-card:hover,
+.btn-card:active {
+  opacity: 0.82;
 }
