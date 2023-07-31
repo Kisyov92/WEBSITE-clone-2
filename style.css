@@ -83,13 +83,19 @@ body {
 }
 
 .section-heading {
-  font-size: 9.5rem;
-  font-weight: 500;
+  font-size: 7rem;
+  font-weight: 400;
   font-family: "M PLUS Rounded 1c", sans-serif;
   letter-spacing: -5px;
   line-height: 1.1;
+  margin-left: -0.5rem;
+  margin-bottom: 1rem;
 }
 
+.section-heading-main {
+  font-weight: 500;
+  font-size: 9.5rem;
+}
 .section-label {
   display: inline-block;
   background-color: #2d2c4c;
@@ -98,14 +104,54 @@ body {
   font-size: 1.6rem;
   padding: 0.4rem 0.8rem;
   letter-spacing: 2px;
-  margin-bottom: 3.2rem;
+  margin-bottom: 2rem;
 }
 
 .section-subheading {
-  font-size: 2.6rem;
-  width: 60%;
+  font-size: 2.45rem;
   line-height: 1.5;
   margin-bottom: 8rem;
+}
+
+.section-name {
+  background-color: #f2f2f2;
+}
+
+.container--name {
+  display: flex;
+  gap: 6rem;
+  padding: 16rem 3.2rem 12.8rem;
+}
+
+.container-competencies {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 3.2rem; */
+
+  column-gap: 3.2rem;
+  row-gap: 2rem;
+}
+
+.competence {
+  width: 22rem;
+}
+
+.name-img {
+  width: 24.5rem;
+}
+
+.name-heading {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #20a5e6;
+  font-weight: 400;
+  margin-bottom: 0.8rem;
+}
+.name-text {
+  font-size: 1.6rem;
+  width: 22rem;
+  line-height: 1.4;
 }
 
 /**************************/
@@ -119,6 +165,7 @@ body {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+  width: 100%;
 }
 
 .container-nav {
@@ -214,4 +261,157 @@ body {
 .btn-card:hover,
 .btn-card:active {
   opacity: 0.82;
+}
+
+/**************************/
+/* SECTION FEATURES */
+/**************************/
+
+.section-features {
+  background-color: #bce3f5;
+  padding: 16rem 0 12.8rem;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.feature-img {
+  height: 8.5rem;
+}
+
+/**************************/
+/* SECTION FEATURES */
+/**************************/
+
+.section-about-us {
+  background-color: #fcd750;
+  padding: 6.4rem 0;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60rem;
+  text-align: center;
+}
+
+.about-img {
+  height: 6.6rem;
+  margin-bottom: 3.2rem;
+}
+
+.about-heading {
+  font-size: 3.8rem;
+  font-weight: 400;
+  margin-bottom: 3.2rem;
+}
+
+.about-text {
+  font-size: 1.6rem;
+  margin-bottom: 3.2rem;
+  line-height: 1.5;
+}
+
+.btn-about:link,
+.btn-about:visited {
+  font-size: 1.6rem;
+  padding: 1.6rem 2.4rem;
+  border-radius: 4px;
+  letter-spacing: 2px;
+  background-color: #2d2c4c;
+  transition: all 0.3s;
+}
+
+.btn-about:active,
+.btn-about:hover {
+  opacity: 0.82;
+}
+
+/**************************/
+/* SECTION FEATURES */
+/**************************/
+
+.btn-how:link,
+.btn-how:visited {
+  background-color: #20a5e6;
+}
+
+/**************************/
+/* FOOTER FEATURES */
+/**************************/
+
+.footer {
+  background-color: #2d2c4c;
+  color: white;
+  padding: 6.4rem 0;
+}
+
+.container-footer {
+  font-size: 1.3rem;
+  display: flex;
+  gap: 8rem;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.footer-logo {
+  width: 30px;
+}
+
+.footer-col {
+  list-style: none;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #fcd750;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s;
+}
+.footer-link:hover,
+.footer-link:active {
+  color: #20a5e6;
+}
+
+.address {
+  line-height: 1.6;
+  margin-top: -0.8rem;
+}
+
+.social {
+  width: 31rem;
+  margin-left: auto;
+}
+
+.social-heading {
+  color: #20a5e6;
+  font-size: 3.2rem;
+  font-weight: 400;
+  margin-bottom: 2.4rem;
+}
+
+.social-text {
+  margin-bottom: 0.8rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.social-icon {
+  width: 4rem;
 }
