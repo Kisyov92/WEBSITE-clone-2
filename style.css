@@ -54,6 +54,7 @@ body {
   line-height: 1;
   color: #2d2c4c;
   position: relative;
+  background-color: #f2f2f2;
 }
 
 /**************************/
@@ -95,6 +96,7 @@ body {
 .section-heading-main {
   font-weight: 500;
   font-size: 9.5rem;
+  letter-spacing: 1.5px;
 }
 .section-label {
   display: inline-block;
@@ -111,10 +113,6 @@ body {
   font-size: 2.45rem;
   line-height: 1.5;
   margin-bottom: 8rem;
-}
-
-.section-name {
-  background-color: #f2f2f2;
 }
 
 .container--name {
@@ -414,4 +412,103 @@ body {
 
 .social-icon {
   width: 4rem;
+}
+
+/**************************/
+/*  OVERWRITEN */
+/**************************/
+
+.link-active:link,
+.link-active:visited {
+  border-bottom: 2px solid #2d2c4c;
+  padding-bottom: 0.5rem;
+}
+
+/**************************/
+/**************************/
+/*  THE-WAY */
+/**************************/
+/**************************/
+
+/**************************/
+/*  THE-WAY -- HEADER */
+/**************************/
+.reason {
+  margin-bottom: 3rem;
+}
+
+.reason-heading {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #20a5e6;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.reason-text {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+/**************************/
+/*  THE-WAY -- SECTION THE-WAY */
+/**************************/
+
+.way {
+  display: flex;
+  align-items: flex-start;
+  padding: 16rem 3.2rem 12.8rem;
+  gap: 6rem;
+}
+
+.way-icon {
+  min-width: 24.5rem;
+  margin-top: 1rem;
+}
+
+.way-text {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.way-blue {
+  background-color: #bce3f5;
+}
+
+/**************************/
+/*  THE-WAY -- SECTION-WORK */
+/**************************/
+
+.section-work {
+  background-color: #fcd750;
+}
+
+.container-work {
+  padding: 16rem 3.2rem 12.8rem;
+}
+
+.works {
+  margin-top: 7rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.work {
+  text-decoration: none;
+  color: inherit;
+}
+
+.work-img {
+  width: 21.6rem;
+  height: 16rem;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+}
+
+.work-heading {
+  font-size: 2.6rem;
+  font-weight: 400;
+  text-decoration: none;
+  max-width: min-content;
 }
