@@ -164,6 +164,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
+  z-index: 1;
 }
 
 .container-nav {
@@ -173,12 +174,12 @@ body {
 }
 
 .logo {
-  height: 2.4rem;
+  height: 6rem;
   transition: all 0.3s;
 }
 
-.logo-big {
-  height: 6rem;
+.logo-small {
+  height: 2.4rem;
 }
 
 .main-nav-list {
@@ -209,6 +210,10 @@ body {
 .section-hero {
   background-color: #fcd750;
   padding: 19.2rem 0 12.8rem;
+}
+
+.section-hero-why {
+  padding: 16rem;
 }
 
 .section-hero-img {
@@ -511,4 +516,96 @@ body {
   font-weight: 400;
   text-decoration: none;
   max-width: min-content;
+}
+
+/**************************/
+/**************************/
+/*  THE-WHY */
+/**************************/
+/**************************/
+
+/**************************/
+/*  THE-WHY -- SECTION THE-hero */
+/**************************/
+
+.hero-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-link {
+  text-decoration: none;
+  color: #2d2c4c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-container {
+  overflow: hidden;
+  border-radius: 10px;
+  height: 24rem;
+  width: 49.6rem;
+  margin-bottom: 3.2rem;
+}
+
+.hero-link--img {
+  transform: translate(0px, -50px);
+  width: 100%;
+}
+
+.hero-link-title {
+  font-size: 3.6rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  width: 43.5rem;
+  line-height: 1.2;
+  margin-bottom: 1.6rem;
+}
+
+.hero-link-text {
+  width: 43.5rem;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  margin-bottom: 3.2rem;
+}
+
+/**************************/
+/*  THE-WHY -- SECTION BLOG-POSTS */
+/**************************/
+
+.grid-posts {
+  gap: 6.4rem;
+  margin-top: -8rem;
+  margin-bottom: 18rem;
+}
+
+.blog-post {
+  text-decoration: none;
+  color: #2d2c4c;
+}
+
+.blog-post:last-child {
+  grid-column: 5 / 9;
+}
+
+.blog-post--img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 3.2rem;
+}
+
+.text-container {
+  padding: 0 2rem;
+}
+
+.blog-post--heading {
+  font-size: 2.3rem;
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+}
+
+.blog-post--text {
+  font-size: 1.6rem;
+  line-height: 1.5;
 }

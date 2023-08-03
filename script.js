@@ -11,9 +11,9 @@ const obsLogo = new IntersectionObserver(
     console.log(1);
 
     console.log(entry);
-    if (entry.isIntersecting === true) logoEl.classList.add("logo-big");
+    if (entry.isIntersecting === true) logoEl.classList.remove("logo-small");
 
-    if (entry.isIntersecting === false) logoEl.classList.remove("logo-big");
+    if (entry.isIntersecting === false) logoEl.classList.add("logo-small");
   },
   {
     // In the viewport
