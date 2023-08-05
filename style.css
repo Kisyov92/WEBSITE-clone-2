@@ -646,3 +646,130 @@ body {
   padding-bottom: 3.2rem;
   line-height: 1.6;
 }
+
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+}
+
+.modal {
+  background-color: #fcd750;
+  height: 65rem;
+  width: 105.6rem;
+  padding: 3.2rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.modal-content {
+  display: flex;
+  gap: 2rem;
+}
+
+.modal-text {
+  width: 50%;
+  padding: 0 3.2rem;
+  line-height: 1.1;
+}
+
+.modal-heading {
+  font-size: 6.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+.required-field {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.required {
+  height: 1.6rem;
+}
+
+.modal-form {
+  width: 50%;
+}
+
+.modal-input,
+.modal-textarea {
+  font-family: inherit;
+  width: 100%;
+  font-size: 1.6rem;
+  padding: 0.5rem;
+  border: none;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s;
+}
+
+.modal-input:focus,
+.modal-textarea:focus {
+  outline: none;
+  box-shadow: inset 0 -1px 0;
+}
+
+.modal-textarea {
+  margin-bottom: 2rem;
+  resize: none;
+}
+
+.modal-img {
+  width: 28.8rem;
+  height: 32rem;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+.modal-btn {
+  background-color: #2d2c4c;
+  color: white;
+  padding: 1.6rem 2.4rem;
+  border-radius: 8px;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.modal-btn:hover {
+  opacity: 0.82;
+}
+
+.close-modal {
+  background-color: #20a5e6;
+  padding: 1.5rem;
+  position: absolute;
+  top: -3rem;
+  right: 3rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.close-modal-img {
+  width: 3rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  appearance: textfield;
+}
+
+.hidden {
+  display: none;
+  opacity: 0;
+}

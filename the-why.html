@@ -31,7 +31,7 @@
               >
             </li>
             <li><a href="the-us.html" class="main-nav-link">The Us</a></li>
-            <li><a href="#" class="main-nav-link">The How</a></li>
+            <li><a href="#" class="main-nav-link open-modal">The How</a></li>
           </ul>
         </nav>
       </div>
@@ -338,5 +338,89 @@
         </div>
       </div>
     </footer>
+
+    <div class="the-how hidden">
+      <div class="backdrop"></div>
+      <div class="modal">
+        <div class="modal-content">
+          <div class="modal-text">
+            <h2 class="modal-heading">CONTACT US</h2>
+            <p class="section-subheading">
+              Stop blending in with the crowd and start leaving your mark on the
+              web.
+            </p>
+
+            <p class="required-field">
+              <span>Required field</span>
+              <img
+                class="required"
+                src="images/modal/required-icon.svg"
+                alt="icon for a required field"
+              />
+            </p>
+          </div>
+          <form class="modal-form">
+            <label for="name">
+              <p class="required-field">
+                <span>NAME</span>
+                <img
+                  class="required"
+                  src="images/modal/required-icon.svg"
+                  alt="icon for a required field"
+                /></p
+            ></label>
+            <input class="modal-input" type="text" id="name" required />
+            <label for="email">
+              <p class="required-field">
+                <span>EMAIL</span>
+                <img
+                  class="required"
+                  src="images/modal/required-icon.svg"
+                  alt="icon for a required field"
+                /></p
+            ></label>
+            <input class="modal-input" type="email" id="email" required />
+            <label for="company">
+              <p class="required-field">
+                <span>COMPANY</span>
+              </p></label
+            >
+            <input class="modal-input" type="text" id="company" />
+            <label for="phone">
+              <p class="required-field">
+                <span>PHONE NUMBER</span>
+              </p></label
+            >
+            <input class="modal-input" type="number" id="phone" />
+            <label for="text">
+              <p class="required-field">
+                <span>MESSAGE</span>
+                <img
+                  class="required"
+                  src="images/modal/required-icon.svg"
+                  alt="icon for a required field"
+                /></p
+            ></label>
+            <textarea
+              class="modal-textarea"
+              name="text"
+              id="text"
+              cols="50"
+              rows="8"
+              required
+            ></textarea>
+            <button type="submit" class="modal-btn">SUBMIT MESSAGE</button>
+          </form>
+        </div>
+        <img class="modal-img" src="images/modal/girl.png" alt="a girl" />
+        <div class="close-modal">
+          <img
+            class="close-modal-img"
+            src="images/modal/close-modal.svg"
+            alt="close btn"
+          />
+        </div>
+      </div>
+    </div>
   </body>
 </html>
